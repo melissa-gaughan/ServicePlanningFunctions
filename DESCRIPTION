@@ -1,12 +1,13 @@
 Package: ServicePlanningFunctions
-Title: What the Package Does (One Line, Title Case)
+Title: Functions to Make the Analysis of KCM Service Planning Analysis Easier
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Melissa", "Gaughan", , "mgaughan@kingcounty.gov", role = c("aut", "cre"))
+Description: This is a collection of functions that come up repeatedly in transit service planning analysis. There are also some functions that just make repetitive tasks easier. Check function documentation for specifics. 
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
+Imports: 
+    purrr,
+    ServicePlanningFunctions
