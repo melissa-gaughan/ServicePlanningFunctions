@@ -20,7 +20,7 @@ You can install the development version of ServicePlanningFunctions from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("melissa-gaughan/ServicePlanningFunctions")
+devtools::install_github("KC-Metro-Transit/ServicePlanningFunctions")
 ```
 
 ## save_objects() Example
