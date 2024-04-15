@@ -6,7 +6,12 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of ServicePlanningFunctions is to …
+The goal of ServicePlanningFunctions is to standardize functions
+repeatedly used in service planning analyses at King County Metro. These
+are the functions that have been developed over multiple analyses and
+projects, so they are not all necessarily related to each other. Read
+through the function descriptions below to learn about available
+functions
 
 ## Installation
 
@@ -18,35 +23,24 @@ You can install the development version of ServicePlanningFunctions from
 devtools::install_github("melissa-gaughan/ServicePlanningFunctions")
 ```
 
-## Example
+## save_objects() Example
 
-This is a basic example which shows you how to solve a common problem:
+save_objects() is designed to work with the purrr package to iterate
+over all objects in your environment and save a copy of them to disk.
+This is useful if you are trying to save your work or if you are getting
+data ready to import into a Shiny app.
 
 ``` r
 library(ServicePlanningFunctions)
 ## basic example code
+object_1 <- cars
+object_2 <- iris
+object_3 <- gapminder
+
+object_list <- ls() #list all object names you want to export
+
+
+object_list <- object_list[! object_list %in% c("object_list")] #remove the list of objects from the list of names of objects to export
+
+purrr::map(object_list, file_location ="your/file/location",  save_objects) #choose where the files should write to disk
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
