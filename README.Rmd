@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # ServicePlanningFunctions
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
 The goal of ServicePlanningFunctions is to standardize functions repeatedly used in service planning analyses at King County Metro. These are the functions that have been developed over multiple analyses and projects, so they are not all necessarily related to each other. Read through the function descriptions below to learn about available functions
@@ -31,7 +32,7 @@ devtools::install_github("KC-Metro-Transit/ServicePlanningFunctions")
 
 ## save_objects() Example
 
-save_objects() is designed to work with the purrr package to iterate over all objects in your environment and save a copy of them to disk. This is useful if you are trying to save your work or if you are getting data ready to import into a Shiny app. 
+save_objects() is designed to work with the purrr package to iterate over all objects in your environment and save a copy of them to disk. This is useful if you are trying to save your work or if you are getting data ready to import into a Shiny app.
 
 ```{r example, eval=F}
 library(ServicePlanningFunctions)
@@ -50,3 +51,12 @@ purrr::map(object_list, file_location ="your/file/location",  save_objects) #cho
 
 ```
 
+## remove_water() Example
+
+```{r example_water, eval=F}
+ kc_tracts <- sf::read_sf(fs::path_package( "extdata", "2020_Census_Tracts_for_King_County___tracts20_area.shp", package = "ServicePlanningFunctions"))
+
+kc_tracts_no_water <- remove_water(polygon = kc_tracts, state_code = "WA", county_code = "King", crs = 2926)
+
+mapview::mapview(kc_tracts_no_water)
+```

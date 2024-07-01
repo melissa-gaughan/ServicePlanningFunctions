@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <origin/>
+                <pubdate>20210812</pubdate>
+                <title>2020 Census Tracts for King County / tracts20_area</title>
+                <edition>One</edition>
+                <geoform>vector digital data</geoform>
+                <pubinfo>
+                    <pubplace/>
+                    <publish>King County</publish>
+                </pubinfo>
+                <othercit>None</othercit>
+                <onlink>https://kingcounty.maps.arcgis.com/home/item.html?id=29a86ca6e67e48c9ab92bf3fd1492641</onlink>
+                <onlink>https://kingcounty.maps.arcgis.com/home/item.html?id=976424a73b714776a73087e3243eff4a</onlink>
+                <onlink>https://www5.kingcounty.gov/sdc/Metadata.aspx?Layer=tracts20</onlink>
+                <onlink>https://www5.kingcounty.gov/sdc/addl_doc/KCGISCenterTermsAndConditions.pdf</onlink>
+                <onlink>https://www5.kingcounty.gov/sdc/addl_doc/KCGISCenterHelpUsingKCOpenData.pdf</onlink>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>This layer contains a unique geographic identifier (GEO_ID_TRT) for each tract group that is the key field for the data from censuses and surveys such as Decennial Census, Economic Census, American Community Survey, and the Population Estimates Program. Data from many of the Census Bureau’s surveys and censuses, are available at the Census Bureau’s public data dissemination website (https://data.census.gov/). All original TIGER/Line shapefiles and geodatabases with demographic data are available atThe TIGER/Line Shapefiles are extracts of selected geographic and cartographic information from the Census Bureau's Master Address File (MAF)/Topologically Integrated Geographic Encoding and Referencing (TIGER) Database (MTDB). The shapefiles include information for the fifty states, the District of Columbia, Puerto Rico, and the Island areas (American Samoa, the Commonwealth of the Northern Mariana Islands, Guam, and the United States Virgin Islands). The shapefiles include polygon boundaries of geographic areas and features, linear features including roads and hydrography, and point features. These shapefiles do not contain any sensitive data or confidential data protected by Title 13 of the U.S.C.Census tracts are small, relatively permanent statistical subdivisions of a county or equivalent entity, and are reviewed and updated by local participants prior to each decennial census. The primary purpose of census tracts is to provide a stable set of geographic units for the presentation of decennial census data. Census tracts generally have a population size of 1,200 to 8,000 people with an optimum size of 4,000 people. The spatial size of census tracts varies widely depending on the density of settlement. Ideally, census tract boundaries remain stable over time to facilitate statistical comparisons from census to census. However, physical changes in street patterns caused by highway construction, new development, and so forth, may require boundary revisions. In addition, significant changes in population may result in splitting or combining census tracts. Census tract boundaries generally follow visible and identifiable features. Census tract boundaries may follow legal boundaries. State and county boundaries always are census tract boundaries in the standard census geographic hierarchy. Census Tract Codes and Numbers—Census tract numbers have up to a 4-character basic number and may have an optional 2-character suffix, for example, 1457.02. The Census Bureau uses suffixes to help identify census tract changes for comparison purposes. Full documentation: https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2020/TGRSHP2020_TechDoc.pdf</abstract>
+            <purpose>2020 United States Census Bureau tract census geography.  Converted from Census Bureau TIGER/Line shapefiles and updated to meet King County GIS standards.</purpose>
+        </descript>
+        <spdom>
+            <bounding>
+                <westbc>-122.62199999985761</westbc>
+                <eastbc>-120.99899999985911</eastbc>
+                <northbc>47.90099999994396</northbc>
+                <southbc>47.06199999994511</southbc>
+            </bounding>
+        </spdom>
+        <keywords>
+            <theme>
+                <themekt>Not applicable</themekt>
+                <themekey>kingcounty_opendata</themekey>
+                <themekey>census_OpenData</themekey>
+                <themekey>census</themekey>
+                <themekey>tracts20_area</themekey>
+            </theme>
+            <place>
+                <placekt>Not applicable</placekt>
+                <placekey>Washington state</placekey>
+                <placekey>King County</placekey>
+                <placekey>WA</placekey>
+                <placekey>Pacific NW</placekey>
+            </place>
+        </keywords>
+        <accconst>Access Constraint: Data is available on GIS Data Portal: http://www5.kingcounty.gov/gisdataportal/Default.aspx</accconst>
+        <useconst>Use Constraint: King County data are made available with the understanding that they shall be used exclusively by the obtainer or his/her authorized agents. Digital products may not be reproduced or redistributed in any form or by any means without the express written authorization of King County.</useconst>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>King County GIS Center</cntorg>
+                    <cntper>Mary Ullrich</cntper>
+                </cntorgp>
+                <cntpos>GIS Specialist</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>201 S Jackson St, Suite 225</address>
+                    <city>Seattle</city>
+                    <state>WA</state>
+                    <postal>98104</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>206-477-4420</cntvoice>
+            </cntinfo>
+        </ptcontac>
+        <browse>
+            <browsen>http://www5.kingcounty.gov/sdc/DataImages/tracts20.jpg</browsen>
+            <browsed>JPG File of layer overlain on base of WA counties or local cities</browsed>
+            <browset>JPG</browset>
+        </browse>
+        <datacred>King County</datacred>
+        <native/>
+    </idinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>tracts20_area</enttypl>
+                <enttypd>area data table</enttypd>
+                <enttypds>King County</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>STATEFP20</attrlabl>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>COUNTYFP20</attrlabl>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>TRACTCE20</attrlabl>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>GEO_ID_TRT</attrlabl>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>NAME20</attrlabl>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>NAMELSAD20</attrlabl>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>MTFCC20</attrlabl>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>FUNCSTAT20</attrlabl>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>ALAND20</attrlabl>
+                <attrdefs>King County</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <rdom>
+                                                						
+                        
+                        <rdommin>0.0</rdommin>
+                                                						
+                        
+                        <rdommax>1390641456.0</rdommax>
+                                                					
+                    
+                    </rdom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>AWATER20</attrlabl>
+                <attrdefs>King County</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <rdom>
+                                                						
+                        
+                        <rdommin>0.0</rdommin>
+                                                						
+                        
+                        <rdommax>240227879.0</rdommax>
+                                                					
+                    
+                    </rdom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>INTPTLAT20</attrlabl>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>INTPTLON20</attrlabl>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>Shape_Leng</attrlabl>
+                <attrdefs>King County</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <rdom>
+                                                						
+                        
+                        <rdommin>4083.12606627</rdommin>
+                                                						
+                        
+                        <rdommax>731681.852082</rdommax>
+                                                					
+                    
+                    </rdom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>TRACT_LBL</attrlabl>
+                <attrdefs>King County</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>Shape_Area</attrlabl>
+                <attrdefs>King County</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <rdom>
+                                                						
+                        
+                        <rdommin>786047.098139</rdommin>
+                                                						
+                        
+                        <rdommax>15262735285.2</rdommax>
+                                                					
+                    
+                    </rdom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+        </detailed>
+        <overview>
+            <eadetcit>King County</eadetcit>
+        </overview>
+    </eainfo>
+    <distinfo>
+        <distrib>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>KCGIS Center</cntorg>
+                    <cntper>giscenter@kingcounty.gov</cntper>
+                </cntorgp>
+                <cntpos>Data Distribution</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>201 S Jackson St</address>
+                    <city>Seattle</city>
+                    <state>WA</state>
+                    <postal>98104</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>206-477-4403</cntvoice>
+            </cntinfo>
+        </distrib>
+        <resdesc>/plibrary2/census/shapes/polygon/tracts20.shp</resdesc>
+        <distliab>Distribution Liability: King County disclaims any warranty of use of any digital product or data beyond that for which it was designed.</distliab>
+        <stdorder>
+            <digform>
+                <digtinfo>
+                    <formname>featureclass and shapefile</formname>
+                </digtinfo>
+            </digform>
+            <fees>Contact KCGIS Client Services for the cost of reproduction - http://www.kingcounty.gov/operations/GIS/GISData/GISDataDistribution.aspx</fees>
+        </stdorder>
+    </distinfo>
+    <metainfo>
+        <metd>20110520</metd>
+        <metc>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>King County GIS Center</cntorg>
+                    <cntper>Mary Ullrich</cntper>
+                </cntorgp>
+                <cntpos>GIS Specialist</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>201 S Jackson St, Suite 225</address>
+                    <city>Seattle</city>
+                    <state>WA</state>
+                    <postal>98104</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>206-477-4420</cntvoice>
+                <cntemail>firstname.lastname@kingcounty.gov</cntemail>
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>

@@ -4,12 +4,20 @@
 \name{ServicePlanningFunctions-package}
 \alias{ServicePlanningFunctions}
 \alias{ServicePlanningFunctions-package}
-\title{ServicePlanningFunctions: What the Package Does (One Line, Title Case)}
+\title{ServicePlanningFunctions: Functions to Make the Analysis of KCM Service Planning Analysis Easier}
 \description{
-What the package does (one paragraph).
+This is a collection of functions that come up repeatedly in transit service planning analysis. There are also some functions that just make repetitive tasks easier. Check function documentation for specifics.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/melissa-gaughan/ServicePlanningFunctions}
+  \item Report bugs at \url{https://github.com/melissa-gaughan/ServicePlanningFunctions/issues}
+}
+
 }
 \author{
-\strong{Maintainer}: First Last \email{first.last@example.com} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
+\strong{Maintainer}: Melissa Gaughan \email{mgaughan@kingcounty.gov}
 
 }
 \keyword{internal}

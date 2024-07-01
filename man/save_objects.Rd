@@ -9,7 +9,7 @@ save_objects(object_name, file_location)
 \arguments{
 \item{object_name}{Character. The name of the object you want to save.}
 
-\item{file_location}{The folder location on your computer that you want to write to. Current requires full file path.}
+\item{file_location}{The folder location on your computer that you want to write to. Currently requires full file path.}
 }
 \value{
 Returns an RDS object containing the R object from the global environment.
@@ -26,5 +26,5 @@ object_list <- ls() # create character vector of all objects in environment
 object_list <- object_list[! object_list \%in\% c("object_list")]
 #use purrr to iterate
 purrr:::map(object_list,
-file_location ="C:/Users/mgaughan/Documents/test", save_objects)
+file_location ="C:/Users/mgaughan/OneDrive - King County/Documents/test", save_objects)
 }
