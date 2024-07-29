@@ -11,6 +11,14 @@ RoxygenNote: 7.2.3
 Imports: 
     purrr,
     sf,
-    tigris
+    tigris, 
+    tidyr, 
+    readr, 
+    stringr, 
+    dplyr, 
+    here
 URL: https://github.com/melissa-gaughan/ServicePlanningFunctions
 BugReports: https://github.com/melissa-gaughan/ServicePlanningFunctions/issues
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
