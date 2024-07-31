@@ -12,9 +12,11 @@ clean_service_rte_num <- function(route_table, netplan_gtfs = FALSE){
   if (netplan_gtfs == TRUE){
 
 routes <- route_table %>%
-  tidyr::separate(route_id, into = c("route", "schedule"), sep = "-",  extra = "merge") %>%
-  tidyr::unite(service_rte_num, route_short_name, route_long_name, remove = FALSE, sep = " ")   #deal with cases where names get split in two fields
-
+  tidyr::separate(route_id, into = c("route_id", "schedule"), sep = "-",  extra = "merge") %>%
+  tidyr::unite(service_rte_num, route_short_name, route_long_name, remove = FALSE, sep = " ") %>%    #deal with cases where names get split in two fields
+  dplyr::select(-schedule) %>%
+  dplyr::relocate(service_rte_num, .after = route_text_color) %>%
+  dplyr::relocate(agency_id, .before = route_short_name)
   } else if (netplan_gtfs == FALSE){
   routes <- route_table %>%  #create blank field for non-NetPlan GTFS
     dplyr::mutate(service_rte_num = NA)
@@ -58,11 +60,11 @@ routes_named <- routes_na %>%
   tidyr::unite(service_rte_num, route_short_name, route_long_name, remove = FALSE, sep = " ")
 
 
-clean_routes <- dplyr::bind_rows( routes_na, routes_named) %>%
+clean_routes <-  dplyr::bind_rows( routes_na, routes_named) %>%
   dplyr::mutate(service_rte_num = stringr::str_remove(service_rte_num, "S|C|B|E")) %>%
-  dplyr::distinct(service_rte_num, .keep_all = TRUE) %>%
+  dplyr::distinct(service_rte_num, .keep_all = TRUE)
 
-na_routes <- routes %>%
+na_routes <- clean_routes %>%
   dplyr::mutate(service_rte_num = as.numeric(service_rte_num)) %>%
   dplyr::filter(is.na(service_rte_num) | is.null(service_rte_num))
 
@@ -71,7 +73,7 @@ if (nrow(na_routes)>0) {
   stop("STOP! Route names need to be fixed")
 } else {
   print("All routes have valid service route numbers.")
-  print(routes$service_rte_num)
+  print(clean_routes$service_rte_num)
   }
  return(clean_routes)
 }
