@@ -16,7 +16,8 @@ Imports:
     readr, 
     stringr, 
     dplyr, 
-    here
+    here, 
+    lubridate
 URL: https://github.com/melissa-gaughan/ServicePlanningFunctions
 BugReports: https://github.com/melissa-gaughan/ServicePlanningFunctions/issues
 Suggests: 

@@ -69,8 +69,8 @@ baseline_gtfs <- flatten(gtfs_list)
   calendar <- baseline_gtfs[stringr::str_detect(names(baseline_gtfs), "calendar")] %>%
     dplyr::bind_rows() %>%
     dplyr::distinct() %>%
-    dplyr:: mutate(start_date = designated_start_date,  #add calendar dates
-           end_date = designated_end_date)
+    dplyr:: mutate(start_date = lubridate::ymd(designated_start_date),  #add calendar dates
+           end_date = lubridate::ymd(designated_end_date))
 
   calendar_dates <- baseline_gtfs[stringr::str_detect(names(baseline_gtfs), "calendar_dates")] %>%
     dplyr::bind_rows() %>%
