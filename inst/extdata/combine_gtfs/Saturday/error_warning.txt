@@ -1,0 +1,1 @@
+Error: Booking: GLINE_2    Vehicle schedule: S1-Sa Saturday  03 has at least one trip with an assigned trip pattern that does not exist anymore. You should regenerate the trip patterns for this schedule. The generated files might be invalid.

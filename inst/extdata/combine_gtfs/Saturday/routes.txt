@@ -1,0 +1,7 @@
+route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color
+8-2256,8,"Seattle Center - Capitol Hill - Rainier Beach",,3,,,
+10-2256,10,"Capitol Hill - Downtown Seattle",,3,,,
+11-2256,11,"Madison Park - Capitol Hill - Downtown Seattle",,3,,F89645,
+12-2256,12,"Interlaken Park - First Hill - Downtown Seattle",,3,,,
+49-2256,49,"Univ District - Broadway - Downtown Seattle",,3,,,
+60-2256,60,"Westwood Village - Georgetown - Broadway",,3,,,

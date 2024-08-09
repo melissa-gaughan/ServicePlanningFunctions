@@ -1,0 +1,2 @@
+service_id,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
+GLINE_2-S1-Wk-Weekday-05,1,1,1,1,1,0,0,,

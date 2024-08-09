@@ -17,3 +17,18 @@ A route dataframe with a field service_rte_num that representing the route numbe
 \description{
 Clean Service Route Numbers
 }
+\examples{
+spring_24_gtfs <- tidytransit::read_gtfs(path = fs::path_package(
+"extdata", "gtfs",
+"241_gtfs.zip", package = "ServicePlanningFunctions"))
+
+spring_24_routes <- clean_service_rte_num(spring_24_gtfs$routes,
+netplan_gtfs = FALSE)
+
+netplan_gtfs <- tidytransit::read_gtfs(path = fs::path_package(
+"extdata", "gtfs",
+"SEPT24_TRIP_GTFS.zip", package = "ServicePlanningFunctions"))
+
+netplan_routes <- clean_service_rte_num(spring_24_gtfs$routes,
+ netplan_gtfs = TRUE)
+}

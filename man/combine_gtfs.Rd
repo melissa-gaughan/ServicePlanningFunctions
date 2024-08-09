@@ -32,3 +32,11 @@ a list object with combined GTFS information. Optionally, exports to csv and RDS
 \description{
 Combine GTFS Files From NetPlan
 }
+\examples{
+#create filepath for the folder that holds the GTFS folder sets to be combined.
+ #Each GTFS needs its own subfolder
+gtfs_folder <- fs::path_package( "extdata", "combine_gtfs", package = "ServicePlanningFunctions")
+# set start and end dates for service period, pass filepath to function.
+madison_st_area_gtfs <- combine_gtfs(gtfs_filepath = gtfs_folder, designated_start_date = 20240901,
+ designated_end_date = 20250330, save_csv = FALSE, save_RDS = FALSE, output_folder = NULL)
+}

@@ -2,6 +2,7 @@
 
 export(clean_service_rte_num)
 export(combine_gtfs)
+export(gtfs_calendar_full_dates)
 export(remove_water)
 export(save_objects)
 export(st_erase)

@@ -21,3 +21,16 @@ sf object with erased water geometries through spatial intersection.
 \description{
 Remove water bodies from polygon
 }
+\examples{
+ #kc_tracts <- sf::read_sf(fs::path_package( "extdata",
+ #"2020_Census_Tracts_for_King_County___tracts20_area.shp",
+  #package = "ServicePlanningFunctions"))
+ #kc_tracts_no_water <- remove_water(polygon = kc_tracts, state_code = "WA",
+  #county_code = "King", crs = 2926)
+ #mapview::mapview(kc_tracts_no_water)
+
+
+
+
+
+}

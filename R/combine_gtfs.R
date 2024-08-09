@@ -14,6 +14,14 @@
 #' @export
 #'
 #' @examples
+#' #create filepath for the folder that holds the GTFS folder sets to be combined.
+#'  #Each GTFS needs its own subfolder
+#' gtfs_folder <- fs::path_package( "extdata", "combine_gtfs", package = "ServicePlanningFunctions")
+#' # set start and end dates for service period, pass filepath to function.
+#' madison_st_area_gtfs <- combine_gtfs(gtfs_filepath = gtfs_folder, designated_start_date = 20240901,
+#'  designated_end_date = 20250330, save_csv = FALSE, save_RDS = FALSE, output_folder = NULL)
+
+
 combine_gtfs <- function(gtfs_filepath, designated_start_date, designated_end_date, save_csv = FALSE, save_RDS = FALSE, output_folder = NULL){
   if(!dir.exists(gtfs_filepath)){
     print("Folder does not exist. Make sure the folder path is correct and points to the parent directory of the GTFS you are combining.")

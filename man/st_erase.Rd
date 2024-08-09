@@ -17,3 +17,13 @@ returns union of the shapes, with y geometries removed
 \description{
 st_erase
 }
+\examples{
+polygon = matrix(c(0,0,10,0,10,10,0,10,0,0),ncol=2, byrow=TRUE)
+big_box <- sf::st_polygon(x= list(polygon))
+plot(sf::st_geometry(big_box))
+shape_to_remove <- matrix(c(1,1,1,2,2,2,2,1,1,1),ncol=2, byrow=TRUE)
+polygon_to_remove <- sf::st_polygon(x = list(shape_to_remove))
+plot(sf::st_geometry(polygon_to_remove))
+clipped_polygon <- st_erase(big_box, polygon_to_remove)
+plot(sf::st_geometry(clipped_polygon))
+}

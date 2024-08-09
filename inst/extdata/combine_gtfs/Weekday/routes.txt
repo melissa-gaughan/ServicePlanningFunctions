@@ -1,0 +1,7 @@
+route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color
+8-2254,8,"Phase III",,3,,AA2A1D,
+10-2254,10,"Capitol Hill - Downtown Seattle",,3,,,
+11-2254,11,"Madison Park - Capitol Hill - Downtown Seattle",,3,,,
+12-2254,12,"Interlaken Park - First Hill - Downtown Seattle",,3,,,
+49-2254,49,"Univ District - Broadway - Downtown Seattle",,3,,,
+60-2254,60,"Westwood Village - Georgetown - Broadway",,3,,,

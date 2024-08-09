@@ -7,6 +7,20 @@
 #' @export
 #'
 #' @examples
+#' spring_24_gtfs <- tidytransit::read_gtfs(path = fs::path_package(
+#' "extdata", "gtfs",
+#' "241_gtfs.zip", package = "ServicePlanningFunctions"))
+#'
+#' spring_24_routes <- clean_service_rte_num(spring_24_gtfs$routes,
+#' netplan_gtfs = FALSE)
+#'
+#' netplan_gtfs <- tidytransit::read_gtfs(path = fs::path_package(
+#' "extdata", "gtfs",
+#' "SEPT24_TRIP_GTFS.zip", package = "ServicePlanningFunctions"))
+#'
+#' netplan_routes <- clean_service_rte_num(spring_24_gtfs$routes,
+#'  netplan_gtfs = TRUE)
+
 clean_service_rte_num <- function(route_table, netplan_gtfs = FALSE){
 
   if (netplan_gtfs == TRUE){

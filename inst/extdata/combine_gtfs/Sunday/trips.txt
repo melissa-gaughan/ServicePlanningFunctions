@@ -1,0 +1,494 @@
+route_id,service_id,trip_id,trip_headsign,direction_id,block_id,shape_id
+11-2255,GLINE_2-S1-Su-Sunday-04,57940676-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57940677-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57940678-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57940679-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57940680-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57940685-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421871,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57940686-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57940687-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57940691-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57940695-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421871,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57940697-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421871,S1-Su04-11-s1-1
+8-2255,GLINE_2-S1-Su-Sunday-04,57940698-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940699-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940700-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+11-2255,GLINE_2-S1-Su-Sunday-04,57940705-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57940706-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421871,S1-Su04-11-s1-1
+8-2255,GLINE_2-S1-Su-Sunday-04,57940707-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940708-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940709-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940710-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940711-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940712-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940713-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940714-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940715-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940716-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940717-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940718-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940719-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940720-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940721-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940722-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940723-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940724-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940725-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940726-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940727-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940728-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940729-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940730-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940731-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940732-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940733-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+11-2255,GLINE_2-S1-Su-Sunday-04,57940734-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57940735-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421871,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57940736-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57940737-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421871,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57940738-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57940739-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421871,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57940740-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57940741-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421871,S1-Su04-11-n1-0
+8-2255,GLINE_2-S1-Su-Sunday-04,57940742-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940743-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940744-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940745-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940746-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940747-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940748-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940749-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940750-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940751-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940752-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940753-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940754-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940755-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940756-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940757-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940758-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940759-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940760-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940761-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940762-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940763-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940764-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940765-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940766-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940767-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+10-2255,GLINE_2-S1-Su-Sunday-04,57940960-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421863,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57940961-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57940962-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421863,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57940963-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57940964-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421863,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57940965-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57940966-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421863,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57940967-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+8-2255,GLINE_2-S1-Su-Sunday-04,57940968-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940969-GLINE_2-S1-Su-Sunday-04,"to Mt Baker Station",0,,S1-Su04-8-E1-2
+8-2255,GLINE_2-S1-Su-Sunday-04,57940970-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940971-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940972-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940973-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940974-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940975-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940976-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940977-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940978-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940979-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940980-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940981-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940982-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940983-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940984-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940985-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940986-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940987-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940988-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940989-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940990-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940991-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940992-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940993-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940994-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940995-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940996-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940997-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940998-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57940999-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57941000-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57941001-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57941002-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57941003-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57941004-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57941005-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57941006-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57941007-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57941008-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57941009-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+8-2255,GLINE_2-S1-Su-Sunday-04,57941010-GLINE_2-S1-Su-Sunday-04,"to Queen Anne",1,,S1-Su04-8-W1-3
+10-2255,GLINE_2-S1-Su-Sunday-04,57941011-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941012-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421863,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941013-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941014-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421863,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941015-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941016-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421863,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941017-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941018-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421863,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941019-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941020-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421863,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941021-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941022-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421863,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941023-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941024-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421863,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941025-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941026-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421863,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941027-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941028-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421863,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941029-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941030-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421863,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941031-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941032-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421863,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941033-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941034-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421863,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941035-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941036-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421863,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941037-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941038-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421863,S1-Su04-10-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941154-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941155-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421864,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941156-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941157-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421864,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941158-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941159-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421864,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941160-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941161-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421864,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941162-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941163-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421864,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941164-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941165-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421864,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941166-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941167-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421864,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941168-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941169-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421864,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941170-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941171-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421864,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941172-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941173-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421864,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941174-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941175-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421864,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941176-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941177-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421864,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941178-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941179-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421864,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941180-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941181-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421864,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941182-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941183-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421864,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941184-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941185-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421864,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941186-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941187-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421864,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941188-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941189-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421864,S1-Su04-12-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941190-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421861,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941191-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421859,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941192-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421860,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941193-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421861,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941194-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421859,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941195-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421860,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941196-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421861,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941197-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421859,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941198-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421860,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941199-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421861,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941200-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421859,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941201-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421860,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941202-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421861,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941203-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421859,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941204-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421860,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941205-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421861,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941206-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421859,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941207-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421860,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941208-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421861,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941209-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421859,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941210-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421860,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941211-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421861,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941212-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421859,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941213-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421860,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941214-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421861,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941215-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421859,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941216-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421860,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941217-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421861,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941218-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421859,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941219-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421860,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941220-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421861,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941221-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421859,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941222-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421860,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941223-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421861,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941224-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421859,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941225-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421860,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941226-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421861,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941227-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421859,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941228-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421860,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941229-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421861,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941230-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421859,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941231-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421860,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941232-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421861,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941233-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421859,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941234-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421860,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941235-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421861,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941236-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421859,S1-Su04-49-s1-1
+49-2255,GLINE_2-S1-Su-Sunday-04,57941237-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421861,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941238-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421859,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941239-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421860,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941240-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421859,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941241-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421860,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941242-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421861,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941243-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421861,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941244-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421860,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941246-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421860,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941250-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421860,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941254-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421860,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941258-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421860,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941262-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421860,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941266-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421860,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941270-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421860,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941274-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421860,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941278-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421860,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941282-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421860,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941286-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421860,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941294-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421860,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941299-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421859,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941303-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421859,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941307-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421859,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941311-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421859,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941315-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421859,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941319-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421859,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941323-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421859,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941327-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421859,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941331-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421859,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941335-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421859,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941339-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421859,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941345-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421859,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941350-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421859,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941355-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421861,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941359-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421861,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941363-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421861,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941367-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421861,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941371-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421861,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941375-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421861,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941379-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421861,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941383-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421861,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941387-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421861,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941391-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421861,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941398-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421861,S1-Su04-49-n1-0
+49-2255,GLINE_2-S1-Su-Sunday-04,57941403-GLINE_2-S1-Su-Sunday-04,"to University District",0,6421861,S1-Su04-49-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941420-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421867,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941421-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421870,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941422-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421866,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941423-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421867,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941424-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421870,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941425-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421868,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941426-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421868,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941427-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421868,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941428-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421869,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941429-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421869,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941430-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421866,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941431-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421870,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941432-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421869,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941433-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421867,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941434-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421866,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941435-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421869,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941436-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421866,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941437-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421870,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941438-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421867,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941439-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421868,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941440-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421870,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941441-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421867,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941442-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421869,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941443-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421869,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941444-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421867,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941445-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421868,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941446-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421867,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941447-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421870,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941448-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421867,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941449-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421867,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941450-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421870,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941451-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421868,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941452-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421868,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941453-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421866,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941454-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421869,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941455-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421869,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941456-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421866,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941457-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421866,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941458-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421869,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941459-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421867,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941460-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421866,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941461-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421868,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941462-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421870,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941463-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421870,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941464-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421868,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941465-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421866,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941466-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421866,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941467-GLINE_2-S1-Su-Sunday-04,"to Westwood Village",1,6421869,S1-Su04-60-s1-1
+60-2255,GLINE_2-S1-Su-Sunday-04,57941468-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421866,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941469-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421868,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941470-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421870,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941471-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421867,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941472-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421869,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941473-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421866,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941474-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421868,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941475-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421870,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941476-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421867,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941477-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421869,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941478-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421866,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941479-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421868,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941480-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421870,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941481-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421867,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941482-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421869,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941483-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421866,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941484-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421868,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941485-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421870,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941486-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421867,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941487-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421869,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941488-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421866,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941489-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421868,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941490-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421870,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941491-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421867,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941492-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421869,S1-Su04-60-n1-0
+60-2255,GLINE_2-S1-Su-Sunday-04,57941493-GLINE_2-S1-Su-Sunday-04,"to Broadway",0,6421866,S1-Su04-60-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941494-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421863,S1-Su04-10-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941495-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941496-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941497-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421862,S1-Su04-10-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941498-GLINE_2-S1-Su-Sunday-04,"to Interlaken Park",0,6421865,S1-Su04-12-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941499-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421863,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941500-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941501-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941502-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421863,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941503-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941504-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421863,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941505-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941506-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941507-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941508-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941509-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941510-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941511-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421864,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941512-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941513-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421864,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941514-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941515-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421864,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941516-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941517-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421864,S1-Su04-12-s1-1
+10-2255,GLINE_2-S1-Su-Sunday-04,57941518-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941519-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421863,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941520-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941521-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421863,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941522-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941523-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421863,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941524-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941525-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421863,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941526-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941527-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421863,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941528-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941529-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421863,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941530-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941531-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421863,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941532-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941533-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421863,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941534-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941535-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421863,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941536-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941537-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421863,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941538-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941539-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421863,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941540-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941541-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421863,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941542-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941543-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421863,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941544-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421862,S1-Su04-10-n1-0
+10-2255,GLINE_2-S1-Su-Sunday-04,57941545-GLINE_2-S1-Su-Sunday-04,"to Capitol Hill",0,6421863,S1-Su04-10-n1-0
+12-2255,GLINE_2-S1-Su-Sunday-04,57941546-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941547-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421864,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941548-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941549-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421864,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941550-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941551-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421864,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941552-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941553-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421864,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941554-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941555-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421864,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941556-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941557-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421864,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941558-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941559-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421864,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941560-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941561-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421864,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941562-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941563-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421864,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941564-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941565-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421864,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941566-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941567-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421864,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941568-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941569-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421864,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941570-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941571-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421864,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941572-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421865,S1-Su04-12-s1-1
+12-2255,GLINE_2-S1-Su-Sunday-04,57941573-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421864,S1-Su04-12-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941683-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421871,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941686-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421871,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941687-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421871,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941688-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421871,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941689-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421871,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941690-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421871,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941691-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421871,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941692-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421871,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941693-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421871,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941694-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421871,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941695-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421871,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941696-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421871,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941697-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421871,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941698-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941700-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941701-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941702-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941703-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941704-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941705-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941706-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941707-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941708-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941709-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941710-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941711-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941712-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421871,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941713-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421871,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941714-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941715-GLINE_2-S1-Su-Sunday-04,"to Downtown Seattle",1,6421872,S1-Su04-11-s1-1
+11-2255,GLINE_2-S1-Su-Sunday-04,57941716-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421871,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941717-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941718-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421871,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941719-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941720-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421871,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941721-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941722-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421871,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941723-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941724-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421871,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941725-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941726-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421871,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941727-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941728-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421871,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941729-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941730-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421871,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941731-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941732-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421871,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941733-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941734-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421871,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941735-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941736-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421871,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941737-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941738-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421871,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941739-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421872,S1-Su04-11-n1-0
+11-2255,GLINE_2-S1-Su-Sunday-04,57941740-GLINE_2-S1-Su-Sunday-04,"to Madison Park",0,6421871,S1-Su04-11-n1-0

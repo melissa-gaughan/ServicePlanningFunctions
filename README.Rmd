@@ -34,7 +34,7 @@ devtools::install_github("KC-Metro-Transit/ServicePlanningFunctions")
 
 save_objects() is designed to work with the purrr package to iterate over all objects in your environment and save a copy of them to disk. This is useful if you are trying to save your work or if you are getting data ready to import into a Shiny app.
 
-```{r example, eval=F}
+```{r example_save_objects, eval=F}
 library(ServicePlanningFunctions)
 ## basic example code
 object_1 <- cars
@@ -59,4 +59,64 @@ purrr::map(object_list, file_location ="your/file/location",  save_objects) #cho
 kc_tracts_no_water <- remove_water(polygon = kc_tracts, state_code = "WA", county_code = "King", crs = 2926)
 
 mapview::mapview(kc_tracts_no_water)
+```
+
+## combine_gtfs() Example
+
+```{r example_combine_gtfs, eval=F}
+
+gtfs_folder <- fs::path_package( "extdata", "combine_gtfs", package = "ServicePlanningFunctions")
+
+madison_st_area_gtfs <- combine_gtfs(gtfs_filepath = gtfs_folder, designated_start_date = 20240901, designated_end_date = 20250330, save_csv = FALSE, save_RDS = FALSE, output_folder = NULL)
+
+
+```
+
+## clean_service_rte_num() Example
+
+```{r example_clean_service_rte_num, eval=F}
+
+
+spring_24_gtfs <- tidytransit::read_gtfs(path =  fs::path_package( "extdata", "gtfs", "241_gtfs.zip", package = "ServicePlanningFunctions"))
+
+spring_24_routes <- clean_service_rte_num(spring_24_gtfs$routes, netplan_gtfs = FALSE)
+
+netplan_sept24_gtfs <- tidytransit::read_gtfs(path =  fs::path_package( "extdata", "gtfs", "SEPT24_TRIP_GTFS.zip", package = "ServicePlanningFunctions"))
+
+netplan_routes <- clean_service_rte_num(netplan_sept24_gtfss$routes, netplan_gtfs = TRUE)
+
+
+```
+
+## gtfs_calendar_full_dates() Example
+
+```{r example_gtfs_calendar_full_dates, eval=F}
+
+spring_24_gtfs <- tidytransit::read_gtfs(path =  fs::path_package( "extdata", "gtfs", "241_gtfs.zip", package = "ServicePlanningFunctions"))
+
+full_cal <- gtfs_calendar_full_dates(calendar = spring_24_gtfs$calendar, calendar_dates = spring_24_gtfs$calendar_dates, netplan_gtfs = FALSE)
+
+netplan_sept24_gtfs <- tidytransit::read_gtfs(path =  fs::path_package( "extdata", "gtfs", "SEPT24_TRIP_GTFS.zip", package = "ServicePlanningFunctions"))
+
+netplan_full_cal <- gtfs_calendar_full_dates(
+                            calendar = netplan_sept24_gtfs$calendar,                                           calendar_dates = netplan_sept24_gtfs$calendar_dates, 
+                            netplan_gtfs = TRUE, 
+                            designated_start_date = 20240901,                                                  designated_end_date = 20250330)
+
+```
+
+## st_erase() Example
+
+A helper function for remove_water() that clips a polygon out from another polygon. Results in a "donut" polygon.
+
+```{r example_st_erase, eval=F}
+ big_box <- sf::st_polygon(x= list(polygon))
+ plot(sf::st_geometry(big_box))
+ shape_to_remove <- matrix(c(1,1,1,2,2,2,2,1,1,1),ncol=2, byrow=TRUE)
+#create smaller polygon to subset
+ polygon_to_remove <- sf::st_polygon(x = list(shape_to_remove))
+ plot(sf::st_geometry(polygon_to_remove))
+# Polygon with smaller area removed
+ clipped_polygon <- st_erase(big_box, polygon_to_remove)
+ plot(st_geometry(clipped_polygon))
 ```

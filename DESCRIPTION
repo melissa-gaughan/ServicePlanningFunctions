@@ -17,7 +17,13 @@ Imports:
     stringr, 
     dplyr, 
     here, 
-    lubridate
+    lubridate, 
+    tidytransit, 
+    cli, 
+    odbc, 
+    fs, 
+    DBI, 
+    janitor
 URL: https://github.com/melissa-gaughan/ServicePlanningFunctions
 BugReports: https://github.com/melissa-gaughan/ServicePlanningFunctions/issues
 Suggests: 
