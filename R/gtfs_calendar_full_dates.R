@@ -64,16 +64,18 @@ con <- DBI::dbConnect(odbc::odbc(),
       cal_dates_df <- calendar_dates
       designated_start_date <- min(as.Date(cal_df$start_date))
       designated_end_date <- max(as.Date(cal_df$end_date))
-      message(paste0("Generating dates from ", designated_start_date, " to ", designated_end_date))
+      cli::cli_alert_info("Generating dates from {designated_start_date} to {designated_end_date}.")
     }
   } else if(netplan_gtfs == TRUE) {
-     if (!anyNA(cal_df$start_date)) { #combine gtfs function has a way to add cal dates to NetPlan GTFS now. Changing this to use existing to allow that to work.
+     if (!anyNA(cal_df$start_date) & !anyNA(cal_df$end_date)) { #combine gtfs function has a way to add cal dates to NetPlan GTFS now. Changing this to use existing to allow that to work.
        cal_dates_df <- calendar_dates
+       cli::cli_alert_info("Start Date and End Date found in Netplan GTFS file.")
+       if (!missing(designated_start_date) & !missing(designated_end_date)) cli::cli_alert_warning("Ignoring Designated Start Date and Designated End Date values.")
        designated_start_date <- min(as.Date(cal_df$start_date))
        designated_end_date <- max(as.Date(cal_df$end_date))
-       message(paste0("Generating dates from ", designated_start_date, " to ", designated_end_date))
-  } else if (missing(start_date) || missing(end_date)) {
-      cli::cli_abort(c("X" = "Start Date and End Date must be defined when using GTFS files generated from Netplan (YYYY-MM-DD)."))
+       cli::cli_alert_info("Generating dates from {designated_start_date} to {designated_end_date}.")
+  } else if (missing(designated_start_date) || missing(designated_end_date)) {
+      cli::cli_abort(c("X" = "Start Date and End Date must be defined when using GTFS files generated from Netplan (YYYYMMDD)."))
     } else if (stringr::str_detect(designated_start_date,  "^\\d{4}-\\d{2}-\\d{2}$") && stringr::str_detect(designated_end_date,  "^\\d{4}-\\d{2}-\\d{2}$")) {
       cli::cli_alert_info("Generating dates from {designated_start_date} to {designated_end_date}.")
       cal_df$start_date <- lubridate::ymd(designated_start_date)
