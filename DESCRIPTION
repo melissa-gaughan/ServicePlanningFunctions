@@ -19,6 +19,7 @@ Imports:
     here, 
     lubridate, 
     tidytransit, 
+    hms,
     cli, 
     odbc, 
     fs, 
