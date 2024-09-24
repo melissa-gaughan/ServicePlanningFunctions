@@ -8,6 +8,7 @@ count_trips_by_geography_title_vi(
   gtfs_object,
   project_name,
   geography = NULL,
+  netplan_gtfs,
   gtfs_type,
   include_st = F,
   save_csv = T,
@@ -22,6 +23,8 @@ count_trips_by_geography_title_vi(
 
 \item{geography}{A sf polygon object to use as analysis geography. If null, defaults to 2020 Census Tracts}
 
+\item{netplan_gtfs}{T/F Is the GTFS from NetPlan?}
+
 \item{gtfs_type}{Character string. Used in output naming for exports. Typically "baseline" or "proposed".}
 
 \item{include_st}{T/F Should ST routes be included in the trip change analysis?}
@@ -31,8 +34,6 @@ count_trips_by_geography_title_vi(
 \item{save_RDS}{T/F Do you want to save an RDS object of the combined GTFS list object?}
 
 \item{output_folder}{File path of the place to export file exports}
-
-\item{netplan_gtfs}{T/F Is the GTFS from NetPlan?}
 }
 \value{
 csv files of results

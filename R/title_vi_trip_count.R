@@ -215,11 +215,11 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
 
   if(save_RDS == TRUE){
 
-    saveRDS(trips_by_geo_rte, na= "", file = paste0(output_folder, "/",
+    saveRDS(trips_by_geo_rte,  file = paste0(output_folder, "/",
                                                              project_name,"_", lubridate::today() , "_", analysis_period, "_",
                                                              geography ,"_" ,gtfs_type, "_by_route_trips.RDS"))
 
-    saveRDS(trips_by_geo, na= "",file = paste0(output_folder, "/", project_name,"_", lubridate::today() ,
+    saveRDS(trips_by_geo, file = paste0(output_folder, "/", project_name,"_", lubridate::today() ,
                                                         "_", analysis_period, "_", geography ,"_" ,gtfs_type, "_trips.RDS"))
 
     cli::cli_inform("RDS export at {output_folder}")
