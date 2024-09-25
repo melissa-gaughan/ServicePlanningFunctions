@@ -155,7 +155,7 @@ count_trips_by_geography <- function(gtfs_object, begin_time, end_time, analysis
 
       #join stops to block groups or tracts. This is how you know which stops are in each block group or tract.
 
-      stops_geo <- sf::st_join( stops_sf,acs, join = st_intersects) %>%
+      stops_geo <- sf::st_join( stops_sf,acs, join = sf::st_intersects) %>%
         sf::st_drop_geometry()
 
       #stops are getting read in as numeric but there are character types at the bottom of the document. Need to force type.
