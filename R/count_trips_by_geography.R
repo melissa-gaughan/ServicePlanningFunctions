@@ -40,24 +40,24 @@ count_trips_by_geography <- function(gtfs_object, begin_time, end_time, analysis
 
     acs <- sf::read_sf(fs::path_package( "extdata", "blkgrp20_shore.shp",
                                          package = "ServicePlanningFunctions")) %>%
-      rename(GEOID = GEO_ID_GRP) %>%
+      dplyr::rename(GEOID = GEO_ID_GRP) %>%
       sf::st_transform(2926) %>%
-      st_buffer(dist=50)
+      sf::st_buffer(dist=50)
   } else if(geography == "tract") {
     acs <- sf::read_sf(fs::path_package( "extdata", "2020_Census_Tracts_for_King_County___tracts20_area.shp",
                                          package = "ServicePlanningFunctions")) %>%
-      rename(GEOID = GEO_ID_TRT) %>%
+      dplyr::rename(GEOID = GEO_ID_TRT) %>%
       sf::st_transform(2926)
     acs <- remove_water(acs) %>%
-      st_buffer(dist=50)
+      sf::st_buffer(dist=50)
   } else if(geography == "eigth_mile_hex"){
     acs <- sf::read_sf(fs::path_package( "extdata", "eigth_mile_hex_grid.shp",
                                          package = "ServicePlanningFunctions")) %>%
-      rename(GEOID = rowid)
+      dplyr::rename(GEOID = rowid)
   } else if (geography == "quarter_mile_hex"){
     acs <- sf::read_sf(fs::path_package( "extdata", "quarter_mile_hex_grid.shp",
                                          package = "ServicePlanningFunctions")) %>%
-      rename(GEOID = rowid)
+      dplyr::rename(GEOID = rowid)
   }else{
 
     cli::cli_abort(c(
