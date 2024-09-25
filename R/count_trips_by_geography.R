@@ -174,6 +174,7 @@ count_trips_by_geography <- function(gtfs_object, begin_time, end_time, analysis
         dplyr::select(stop_id, GEOID, trip_id, arrival_time, seconds_after_midnight) %>%
         dplyr::left_join(gtfs$trips, multiple = "all") %>%
         dplyr::left_join(routes) %>%
+        dplyr::left_join(calendar) %>%
         #filter out community ride and trailhead direct service but leave in the community shuttles
         dplyr::filter(!(service_rte_num %in% c(97, 90, 560:595, 629, 632:634, 636:662 , 680:772, 776:900, 932:999))) %>%
         dplyr::filter(service_id %in% calendar$service_id) %>%

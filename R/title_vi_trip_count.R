@@ -99,12 +99,12 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
       dplyr::left_join( gtfs$stop_times) %>%
       dplyr::select(stop_id, GEOID, trip_id, arrival_time) %>%
       dplyr::left_join(gtfs$trips) %>%
-      tidyr::separate(route_id, into = c("service_rte_num", "schedule"), sep = "-",  extra = "merge") %>%
-      dplyr::mutate (route = stringr::str_remove(service_rte_num, "S|C|B|E"))    %>%
-      dplyr::mutate(route = as.numeric(service_rte_num)) %>%
-      dplyr::left_join(routes, by = "service_rte_num")
+      tidyr::separate(route_id, into = c("route_id", "schedule"), sep = "-",  extra = "merge") %>%
+      dplyr::left_join(routes, by = "route_id") %>%
+      dplyr::mutate(service_rte_num = as.numeric(service_rte_num)) %>%
+      dplyr::left_join(calendar, by = "service_id")
 
-    if(include_st == TRUE){
+    if(include_st == FALSE){
       trips_by_geo_rte <- trips_by_geo_rte %>%
         dplyr::filter(!(service_rte_num %in% c(97, 90,400:601, 629, 632:634, 636:662 , 700:772, 776:900, 932:999))) %>% #for title VI filter out all non metro services
         #this step is fixing the times after midnight issue. I cheated
@@ -114,7 +114,7 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
         dplyr::mutate(arrival_time = stringr::str_replace(arrival_time, "^24:|25:|26:|27:|28:|29:|30:/d" , "04:00:00")) %>%
         dplyr::mutate(arrival_time = hms::as_hms(arrival_time)) %>%
         #filter(arrival_time >= begin_time & arrival_time <= end_time ) %>%
-        dplyr::left_join(netplan_calendar) %>%
+        dplyr::left_join(calendar) %>%
         dplyr::group_by(GEOID, trip_id, service_rte_num, service_id) %>%
         dplyr::slice(which.min(arrival_time)) %>%
         dplyr::summarize(weekly_trips = sum(calendar_sum, na.rm = TRUE))%>%
@@ -148,7 +148,7 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
       dplyr::select(stop_id, GEOID, trip_id, arrival_time) %>%
       dplyr::left_join(gtfs$trips) %>%
       dplyr::left_join(routes, by = "route_id")
-    if(include_st == TRUE){
+    if(include_st == FALSE){
       trips_by_geo_rte <- trips_by_geo_rte %>%
         dplyr::filter(!(service_rte_num %in% c(97, 90,400:601, 629, 632:634, 636:662 , 700:772, 776:900, 932:999))) %>% #for title VI filter out all non metro services
         #this step is fixing the times after midnight issue. I cheated
