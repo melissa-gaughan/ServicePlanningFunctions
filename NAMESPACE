@@ -2,6 +2,9 @@
 
 export(clean_service_rte_num)
 export(combine_gtfs)
+export(count_trips_by_geography)
+export(count_trips_by_geography_title_vi)
+export(get_title_vi_classification)
 export(gtfs_calendar_full_dates)
 export(remove_water)
 export(save_objects)
