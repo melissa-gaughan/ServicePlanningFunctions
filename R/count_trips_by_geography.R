@@ -69,7 +69,7 @@ count_trips_by_geography <- function(gtfs_object, begin_time, end_time, analysis
   #GTFS #####
   #set gtfs object to reference gtfs in global environment.
 
-  gtfs_object <- .data[[.gtfs_object]]
+
 
   if(!(("tidygtfs" %in% class(gtfs_object)) | ("gtfs"  %in% class(gtfs_object)) | ("list" %in% class(gtfs_object)))){
     cli::cli_abort(c(
