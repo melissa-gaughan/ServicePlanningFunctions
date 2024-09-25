@@ -88,7 +88,7 @@ count_trips_by_geography <- function(gtfs_object, begin_time, end_time, analysis
     # Routes #####
 
 
-      routes <- clean_route_short_names(gtfs$routes, netplan_gtfs = netplan_gtfs) %>%
+      routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs) %>%
         dplyr::mutate(route_num = as.numeric(service_rte_num)) %>%
       dplyr::mutate(vehicle_capacity = dplyr::case_when((service_rte_num < 400 & !(service_rte_num %in% c(200, 204, 224, 96, 98))) ~ 61,
                                             service_rte_num %in% c(671, 672, 673, 674, 675, 676, 677, 678) ~ 76,
