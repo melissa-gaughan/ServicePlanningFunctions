@@ -64,7 +64,8 @@ get_title_vi_classification <- function( acs_year, geography=NULL, state = "WA",
     kc_tracts_no_water <- remove_water(polygon = kc_tracts, state_code = "WA",  county_code = "King", crs = 2926) %>%
       sf::st_buffer(50)
 
-    acs <- kc_tracts_no_water
+    acs <- kc_tracts_no_water %>%
+      dplyr::rename(GEOID = GEO_ID_TRT)
 
   } else if(!(("MULTIPOLYGON" %in% class(geography))| "POLYGON" %in% class(geography))){
     cli::cli_abort(c(
