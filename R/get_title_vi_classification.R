@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-get_title_vi_classification <- function( acs_year, geography, state = "WA", county = "King") {
+get_title_vi_classification <- function( acs_year, geography=NULL, state = "WA", county = "King") {
 
   server <- "kcitazrsqlprp01.database.windows.net"
   database = "tbird_dw"
