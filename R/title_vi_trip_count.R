@@ -78,7 +78,7 @@ if(!(("tidygtfs" %in% class(gtfs_object)) | ("gtfs"  %in% class(gtfs_object)) | 
 routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
  #join stops to block groups or tracts. This is how you know which stops are in each block group or tract.
 
-  stops_geo <- sf::st_join( stops_sf,acs, join = st_intersects) %>%
+  stops_geo <- sf::st_join( stops_sf,acs, join = sf::st_intersects) %>%
     sf::st_drop_geometry()
   #
   # stops_without_bg <-  st_join( stops_sf,acs, join = st_intersects) %>% #stops_geo %>%
@@ -202,11 +202,10 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
   if(save_csv == TRUE){
 
     readr::write_csv(trips_by_geo_rte, na= "", file = paste0(output_folder, "/",
-      project_name,"_", lubridate::today() , "_", analysis_period, "_",
-      geography ,"_" ,gtfs_type, "_by_route_trips.csv"))
+      project_name,"_", lubridate::today() , "_title_vi_",gtfs_type, "_by_route_trips.csv"))
 
     readr::write_csv(trips_by_geo, na= "",file = paste0(output_folder, "/", project_name,"_", lubridate::today() ,
-                    "_", analysis_period, "_", geography ,"_" ,gtfs_type, "_trips.csv"))
+                                                        "_title_vi_" ,gtfs_type, "_trips.csv"))
 
     cli::cli_inform("CSV exports at {output_folder}")
   } else {
@@ -216,11 +215,10 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
   if(save_RDS == TRUE){
 
     saveRDS(trips_by_geo_rte,  file = paste0(output_folder, "/",
-                                                             project_name,"_", lubridate::today() , "_", analysis_period, "_",
-                                                             geography ,"_" ,gtfs_type, "_by_route_trips.RDS"))
+                                                             project_name,"_", lubridate::today() , "_title_vi_" ,gtfs_type, "_by_route_trips.RDS"))
 
     saveRDS(trips_by_geo, file = paste0(output_folder, "/", project_name,"_", lubridate::today() ,
-                                                        "_", analysis_period, "_", geography ,"_" ,gtfs_type, "_trips.RDS"))
+                                        "_title_vi_" ,gtfs_type, "_trips.RDS"))
 
     cli::cli_inform("RDS export at {output_folder}")
   }else {
