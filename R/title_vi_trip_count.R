@@ -27,7 +27,8 @@ count_trips_by_geography_title_vi <- function(gtfs_object,  project_name, geogra
       kc_tracts <- sf::read_sf(fs::path_package( "extdata", "2020_Census_Tracts_for_King_County___tracts20_area.shp",
                                              package = "ServicePlanningFunctions"))
       kc_tracts_no_water <- remove_water(polygon = kc_tracts, state_code = "WA",  county_code = "King", crs = 2926) %>%
-        sf::st_buffer(50)
+        sf::st_buffer(50) %>%
+        dplyr::rename(GEOID = GEO_ID_TRT)
 
  acs <- kc_tracts_no_water
 
