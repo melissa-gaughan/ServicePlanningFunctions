@@ -28,7 +28,7 @@ clean_service_rte_num <- function(route_table, netplan_gtfs = FALSE){
 routes <- route_table %>%
  # tidyr::separate(route_id, into = c("route_id", "schedule"), sep = "-",  extra = "merge") %>%
   tidyr::unite(service_rte_num, route_short_name, route_long_name, remove = FALSE, sep = " ") %>%    #deal with cases where names get split in two fields
-  dplyr::select(-schedule) %>%
+  #dplyr::select(-schedule) %>%
   dplyr::relocate(service_rte_num, .after = route_text_color) %>%
   dplyr::relocate(agency_id, .before = route_short_name)
   } else if (netplan_gtfs == FALSE){
