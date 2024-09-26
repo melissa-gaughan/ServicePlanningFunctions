@@ -60,7 +60,7 @@ if(!(("tidygtfs" %in% class(gtfs_object)) | ("gtfs"  %in% class(gtfs_object)) | 
 
 
     # Calculate calendar_sum using gtfs_calendar_full_dates function
-    calendar <- gtfs_calendar_full_dates( calendar =  gtfs$calendar, calendar_dates = gtfs$calendar_dates) %>%
+    calendar <- gtfs_calendar_full_dates( calendar =  gtfs$calendar, calendar_dates = gtfs$calendar_dates, netplan_gtfs = netplan_gtfs) %>%
       dplyr::group_by(service_id, day_of_week) %>%
       dplyr::summarize(weekly_trip_ct = sum(ct) / max(num_of_weeks), .groups = "keep") %>%
       dplyr::group_by(service_id) %>%
