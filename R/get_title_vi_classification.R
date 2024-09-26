@@ -74,7 +74,8 @@ get_title_vi_classification <- function( acs_year, geography=NULL, state = "WA",
   } else {
     acs <- geography
   }
-
+  cli::cli_inform(c(
+    "before census table" ))
 
   census_table <- tidycensus::get_acs(geography = "tract",
                           variables = c(total_pop = "B01001_001"),
@@ -86,8 +87,10 @@ get_title_vi_classification <- function( acs_year, geography=NULL, state = "WA",
     janitor::clean_names() %>%
     dplyr::select(geoid, total_pop_e) %>%
     dplyr::rename(total_pop = total_pop_e)
+  cli::cli_inform(c(
+    "after census table" ))
 
-  tract_info  <-  tracts %>%
+  tract_info  <-  acs %>%
     janitor::clean_names() %>%
     dplyr::left_join( tract_classification, by = "geoid") %>%
     dplyr:: left_join(census_table) %>%
