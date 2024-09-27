@@ -79,15 +79,24 @@ get_title_vi_classification <- function( acs_year, geography=NULL, state = "WA",
     "before census table" ))
 
   census_table <- tidycensus::get_acs(geography = "tract",
-                          variables = c(total_pop = "B01001_001"),
-                          state= "WA",
-                          county = "King",
+                          variables = c(total_pop = "B01001_001",
+                                        pov1="C17002_001"     ,
+                                        pov2= "C17002_008" ,
+                                        people_of_color1 ="B03002_001",
+                                        people_of_color2=   "B03002_003"),
+                          state= state,
+                          county = county,
                           year= acs_year,
-                          geometry = F,
-                          output = "wide") %>%
+                          geometry = F) %>%
     janitor::clean_names() %>%
-    dplyr::select(geoid, total_pop_e) %>%
-    dplyr::rename(total_pop = total_pop_e)
+    dplyr::select(-moe)
+
+
+    dplyr::pivot_wider(names_from = variable, values_from = c(estimate)) %>%
+
+    dplyr::mutate(population_200_pct_below_poverty_line = estimate_pov1 - estimate_pov2,
+           people_of_color= estimate_people_of_color1 - estimate_people_of_color2)
+
   cli::cli_inform(c(
     "after census table" ))
 
