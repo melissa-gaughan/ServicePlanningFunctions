@@ -91,8 +91,8 @@ get_title_vi_classification <- function( acs_year, geography=NULL, state = "WA",
     janitor::clean_names() %>%
     dplyr::select(-moe) %>%
    tidyr::pivot_wider(names_from = variable, values_from = c(estimate)) %>%
-    dplyr::mutate(population_200_pct_below_poverty_line = estimate_pov1 - estimate_pov2,
-           people_of_color= estimate_people_of_color1 - estimate_people_of_color2)
+    dplyr::mutate(population_200_pct_below_poverty_line = pov1 - pov2,
+           people_of_color= people_of_color1 - people_of_color2)
 
   cli::cli_inform(c(
     "after census table" ))
