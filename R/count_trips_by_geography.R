@@ -181,8 +181,10 @@ count_trips_by_geography <- function(gtfs_object, begin_time, end_time, analysis
         dplyr::filter(!(service_rte_num %in% c(97, 90, 560:595, 629, 632:634, 636:662 , 680:772, 776:900, 932:999))) %>%
         dplyr::filter(service_id %in% calendar$service_id) %>%
         dplyr::filter(seconds_after_midnight >= start_time_sec & seconds_after_midnight <= end_time_sec ) %>%
+        #retrieve the first stop record in each geography for each trip
         dplyr::group_by(GEOID, trip_id, route_id, service_rte_num, vehicle_capacity) %>%
-        dplyr::slice(which.min(seconds_after_midnight)) %>%
+        dplyr::mutate(first_seconds_after_midnight = min(seconds_after_midnight)) %>%
+        dplyr::filter(seconds_after_midnight == first_seconds_after_midnight) %>%
         dplyr::mutate(trip_count = sum(calendar_sum)) %>% #summarise trips based on full calendar
         #unlike the week level analysis, we don't need to multiply the # of trips by the weekly trips.
         dplyr::ungroup() %>%
