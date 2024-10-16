@@ -97,7 +97,7 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
   if(netplan_gtfs == TRUE){
     trips_by_geo_rte <- stops_geo %>%
       dplyr::select(stop_id, GEOID) %>%
-      dplyr::left_join( gtfs$stop_times) %>%
+      dplyr::left_join( gtfs$stop_times, multiple = "all", relationship = "many-to-many") %>%
       dplyr::select(stop_id, GEOID, trip_id, arrival_time) %>%
       dplyr::left_join(gtfs$trips) %>%
      # tidyr::separate(route_id, into = c("route_id", "schedule"), sep = "-",  extra = "merge") %>%
@@ -117,7 +117,8 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
         #filter(arrival_time >= begin_time & arrival_time <= end_time ) %>%
         dplyr::left_join(calendar) %>%
         dplyr::group_by(GEOID, trip_id, service_rte_num, service_id) %>%
-        dplyr::slice(which.min(arrival_time)) %>%
+        dplyr::mutate(first_seconds_after_midnight = min(seconds_after_midnight)) %>%
+        dplyr::filter(seconds_after_midnight == first_seconds_after_midnight) %>%
         dplyr::summarize(weekly_trips = sum(calendar_sum, na.rm = TRUE))%>%
         dplyr::ungroup () %>%
         dplyr::group_by(GEOID, service_rte_num) %>%
@@ -135,7 +136,8 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
         #filter(arrival_time >= begin_time & arrival_time <= end_time ) %>%
         dplyr::left_join(calendar) %>%
         dplyr::group_by(GEOID, trip_id, service_rte_num, service_id) %>%
-        dplyr::slice(which.min(arrival_time)) %>%
+        dplyr::mutate(first_seconds_after_midnight = min(seconds_after_midnight)) %>%
+        dplyr::filter(seconds_after_midnight == first_seconds_after_midnight) %>%
         dplyr::summarize(weekly_trips = sum(calendar_sum, na.rm = TRUE))%>%
         dplyr::ungroup () %>%
         dplyr::group_by(GEOID, service_rte_num) %>%
@@ -145,7 +147,7 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
   } else { #handling the difference between netplan GTFS which uses route_id for storage of route num and production GTFS which uses route_short_name
     trips_by_geo_rte <- stops_geo %>%
       dplyr::select(stop_id, GEOID) %>%
-      dplyr::left_join( gtfs$stop_times) %>%
+      dplyr::left_join( gtfs$stop_times, multiple = "all", relationship = "many-to-many") %>%
       dplyr::select(stop_id, GEOID, trip_id, arrival_time) %>%
       dplyr::left_join(gtfs$trips) %>%
       dplyr::left_join(routes, by = "route_id")
@@ -161,7 +163,8 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
         #filter(arrival_time >= begin_time & arrival_time <= end_time ) %>%
         dplyr::left_join(calendar) %>%
         dplyr::group_by(GEOID, trip_id, service_rte_num, service_id) %>%
-        dplyr::slice(which.min(arrival_time)) %>%
+        dplyr::mutate(first_seconds_after_midnight = min(seconds_after_midnight)) %>%
+        dplyr::filter(seconds_after_midnight == first_seconds_after_midnight) %>%
         dplyr::summarize(weekly_trips = sum(calendar_sum, na.rm = TRUE))%>%
         dplyr::ungroup () %>%
         dplyr::group_by(GEOID, service_rte_num) %>%
@@ -178,7 +181,8 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
         #filter(arrival_time >= begin_time & arrival_time <= end_time ) %>%
         dplyr::left_join(calendar) %>%
         dplyr::group_by(GEOID, trip_id, service_rte_num, service_id) %>%
-        dplyr::slice(which.min(arrival_time)) %>%
+        dplyr::mutate(first_seconds_after_midnight = min(seconds_after_midnight)) %>%
+        dplyr::filter(seconds_after_midnight == first_seconds_after_midnight) %>%
         dplyr::summarize(weekly_trips = sum(calendar_sum, na.rm = TRUE))%>%
         dplyr::ungroup () %>%
         dplyr::group_by(GEOID, service_rte_num) %>%
