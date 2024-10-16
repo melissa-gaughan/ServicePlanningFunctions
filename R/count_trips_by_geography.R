@@ -172,7 +172,7 @@ count_trips_by_geography <- function(gtfs_object, begin_time, end_time, analysis
 
       trips_by_geo_rte <- stops_geo %>%
         dplyr::select(stop_id, GEOID) %>%
-        dplyr::left_join( gtfs$stop_times, multiple = "all") %>%
+        dplyr::left_join( gtfs$stop_times, multiple = "all", relationship = "many-to-many") %>%
         dplyr::select(stop_id, GEOID, trip_id, arrival_time, seconds_after_midnight) %>%
         dplyr::left_join(gtfs$trips, multiple = "all") %>%
         dplyr::left_join(routes) %>%
