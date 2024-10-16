@@ -79,6 +79,13 @@ if(!(("tidygtfs" %in% class(gtfs_object)) | ("gtfs"  %in% class(gtfs_object)) | 
 routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
  #join stops to block groups or tracts. This is how you know which stops are in each block group or tract.
 
+  #Convert Arrival HMS time into seconds after midnight
+  stop_times <- stringr::str_split_fixed(gtfs$stop_times$arrival_time, pattern= ":", 3)
+
+  stop_time_sec <- (as.numeric(stop_times[,1])*3600) + as.numeric(stop_times[,2])*60 + as.numeric(stop_times[,3])
+
+  gtfs$stop_times$seconds_after_midnight <- stop_time_sec
+
   stops_geo <- sf::st_join( stops_sf,acs, join = sf::st_intersects) %>%
     sf::st_drop_geometry()
   #
@@ -98,7 +105,7 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
     trips_by_geo_rte <- stops_geo %>%
       dplyr::select(stop_id, GEOID) %>%
       dplyr::left_join( gtfs$stop_times, multiple = "all", relationship = "many-to-many") %>%
-      dplyr::select(stop_id, GEOID, trip_id, arrival_time) %>%
+      dplyr::select(stop_id, GEOID, trip_id, arrival_time, seconds_after_midnight) %>%
       dplyr::left_join(gtfs$trips) %>%
      # tidyr::separate(route_id, into = c("route_id", "schedule"), sep = "-",  extra = "merge") %>%
       dplyr::left_join(routes, by = "route_id") %>%
@@ -148,7 +155,7 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
     trips_by_geo_rte <- stops_geo %>%
       dplyr::select(stop_id, GEOID) %>%
       dplyr::left_join( gtfs$stop_times, multiple = "all", relationship = "many-to-many") %>%
-      dplyr::select(stop_id, GEOID, trip_id, arrival_time) %>%
+      dplyr::select(stop_id, GEOID, trip_id, arrival_time, seconds_after_midnight) %>%
       dplyr::left_join(gtfs$trips) %>%
       dplyr::left_join(routes, by = "route_id")
     if(include_st == FALSE){
