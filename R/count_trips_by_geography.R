@@ -69,6 +69,8 @@ count_trips_by_geography <- function(gtfs_object, begin_time, end_time, analysis
   #GTFS #####
   #set gtfs object to reference gtfs in global environment.
 
+
+
   if(!(("tidygtfs" %in% class(gtfs_object)) | ("gtfs"  %in% class(gtfs_object)) | ("list" %in% class(gtfs_object)))){
     cli::cli_abort(c(
       "Object Type Error",
@@ -155,7 +157,7 @@ count_trips_by_geography <- function(gtfs_object, begin_time, end_time, analysis
 
       #join stops to block groups or tracts. This is how you know which stops are in each block group or tract.
 
-      stops_geo <- sf::st_join( stops_sf,acs, join = st_intersects) %>%
+      stops_geo <- sf::st_join( stops_sf,acs, join = sf::st_intersects) %>%
         sf::st_drop_geometry()
 
       #stops are getting read in as numeric but there are character types at the bottom of the document. Need to force type.
@@ -170,16 +172,19 @@ count_trips_by_geography <- function(gtfs_object, begin_time, end_time, analysis
 
       trips_by_geo_rte <- stops_geo %>%
         dplyr::select(stop_id, GEOID) %>%
-        dplyr::left_join( gtfs$stop_times, multiple = "all") %>%
+        dplyr::left_join( gtfs$stop_times, multiple = "all", relationship = "many-to-many") %>%
         dplyr::select(stop_id, GEOID, trip_id, arrival_time, seconds_after_midnight) %>%
         dplyr::left_join(gtfs$trips, multiple = "all") %>%
         dplyr::left_join(routes) %>%
+        dplyr::left_join(calendar) %>%
         #filter out community ride and trailhead direct service but leave in the community shuttles
         dplyr::filter(!(service_rte_num %in% c(97, 90, 560:595, 629, 632:634, 636:662 , 680:772, 776:900, 932:999))) %>%
         dplyr::filter(service_id %in% calendar$service_id) %>%
         dplyr::filter(seconds_after_midnight >= start_time_sec & seconds_after_midnight <= end_time_sec ) %>%
+        #retrieve the first stop record in each geography for each trip
         dplyr::group_by(GEOID, trip_id, route_id, service_rte_num, vehicle_capacity) %>%
-        dplyr::slice(which.min(seconds_after_midnight)) %>%
+        dplyr::mutate(first_seconds_after_midnight = min(seconds_after_midnight)) %>%
+        dplyr::filter(seconds_after_midnight == first_seconds_after_midnight) %>%
         dplyr::mutate(trip_count = sum(calendar_sum)) %>% #summarise trips based on full calendar
         #unlike the week level analysis, we don't need to multiply the # of trips by the weekly trips.
         dplyr::ungroup() %>%

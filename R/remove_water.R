@@ -21,14 +21,14 @@
 #'
 #'
 
-remove_water <- function(polygon, state_code = "WA", county_code = "King", crs = 2926 ){
+remove_water <- function(polygon, state_code = "WA", county_code = "King", crs = 2926, acs_year = NULL ){
 
   valid_polygon <- sf::st_make_valid(polygon) %>%
     sf::st_transform(crs = crs)
 
 
 
-  water <- tigris::area_water(state = state_code, county = county_code, class = "sf") %>%
+  water <- tigris::area_water(state = state_code, county = county_code, class = "sf", year = acs_year) %>%
     sf::st_transform(crs = crs)
 
   print("Begining water erasing. This can take a while.")

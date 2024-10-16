@@ -27,7 +27,8 @@ count_trips_by_geography_title_vi <- function(gtfs_object,  project_name, geogra
       kc_tracts <- sf::read_sf(fs::path_package( "extdata", "2020_Census_Tracts_for_King_County___tracts20_area.shp",
                                              package = "ServicePlanningFunctions"))
       kc_tracts_no_water <- remove_water(polygon = kc_tracts, state_code = "WA",  county_code = "King", crs = 2926) %>%
-        sf::st_buffer(50)
+        sf::st_buffer(50) %>%
+        dplyr::rename(GEOID = GEO_ID_TRT)
 
  acs <- kc_tracts_no_water
 
@@ -60,7 +61,7 @@ if(!(("tidygtfs" %in% class(gtfs_object)) | ("gtfs"  %in% class(gtfs_object)) | 
 
 
     # Calculate calendar_sum using gtfs_calendar_full_dates function
-    calendar <- gtfs_calendar_full_dates( calendar =  gtfs$calendar, calendar_dates = gtfs$calendar_dates) %>%
+    calendar <- gtfs_calendar_full_dates( calendar =  gtfs$calendar, calendar_dates = gtfs$calendar_dates, netplan_gtfs = netplan_gtfs) %>%
       dplyr::group_by(service_id, day_of_week) %>%
       dplyr::summarize(weekly_trip_ct = sum(ct) / max(num_of_weeks), .groups = "keep") %>%
       dplyr::group_by(service_id) %>%
@@ -78,7 +79,14 @@ if(!(("tidygtfs" %in% class(gtfs_object)) | ("gtfs"  %in% class(gtfs_object)) | 
 routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
  #join stops to block groups or tracts. This is how you know which stops are in each block group or tract.
 
-  stops_geo <- sf::st_join( stops_sf,acs, join = st_intersects) %>%
+  #Convert Arrival HMS time into seconds after midnight
+  stop_times <- stringr::str_split_fixed(gtfs$stop_times$arrival_time, pattern= ":", 3)
+
+  stop_time_sec <- (as.numeric(stop_times[,1])*3600) + as.numeric(stop_times[,2])*60 + as.numeric(stop_times[,3])
+
+  gtfs$stop_times$seconds_after_midnight <- stop_time_sec
+
+  stops_geo <- sf::st_join( stops_sf,acs, join = sf::st_intersects) %>%
     sf::st_drop_geometry()
   #
   # stops_without_bg <-  st_join( stops_sf,acs, join = st_intersects) %>% #stops_geo %>%
@@ -96,15 +104,15 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
   if(netplan_gtfs == TRUE){
     trips_by_geo_rte <- stops_geo %>%
       dplyr::select(stop_id, GEOID) %>%
-      dplyr::left_join( gtfs$stop_times) %>%
-      dplyr::select(stop_id, GEOID, trip_id, arrival_time) %>%
+      dplyr::left_join( gtfs$stop_times, multiple = "all", relationship = "many-to-many") %>%
+      dplyr::select(stop_id, GEOID, trip_id, arrival_time, seconds_after_midnight) %>%
       dplyr::left_join(gtfs$trips) %>%
-      tidyr::separate(route_id, into = c("service_rte_num", "schedule"), sep = "-",  extra = "merge") %>%
-      dplyr::mutate (route = stringr::str_remove(service_rte_num, "S|C|B|E"))    %>%
-      dplyr::mutate(route = as.numeric(service_rte_num)) %>%
-      dplyr::left_join(routes, by = "service_rte_num")
+     # tidyr::separate(route_id, into = c("route_id", "schedule"), sep = "-",  extra = "merge") %>%
+      dplyr::left_join(routes, by = "route_id") %>%
+      dplyr::mutate(service_rte_num = as.numeric(service_rte_num)) %>%
+      dplyr::left_join(calendar, by = "service_id")
 
-    if(include_st == TRUE){
+    if(include_st == FALSE){
       trips_by_geo_rte <- trips_by_geo_rte %>%
         dplyr::filter(!(service_rte_num %in% c(97, 90,400:601, 629, 632:634, 636:662 , 700:772, 776:900, 932:999))) %>% #for title VI filter out all non metro services
         #this step is fixing the times after midnight issue. I cheated
@@ -114,9 +122,10 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
         dplyr::mutate(arrival_time = stringr::str_replace(arrival_time, "^24:|25:|26:|27:|28:|29:|30:/d" , "04:00:00")) %>%
         dplyr::mutate(arrival_time = hms::as_hms(arrival_time)) %>%
         #filter(arrival_time >= begin_time & arrival_time <= end_time ) %>%
-        dplyr::left_join(netplan_calendar) %>%
+        dplyr::left_join(calendar) %>%
         dplyr::group_by(GEOID, trip_id, service_rte_num, service_id) %>%
-        dplyr::slice(which.min(arrival_time)) %>%
+        dplyr::mutate(first_seconds_after_midnight = min(seconds_after_midnight)) %>%
+        dplyr::filter(seconds_after_midnight == first_seconds_after_midnight) %>%
         dplyr::summarize(weekly_trips = sum(calendar_sum, na.rm = TRUE))%>%
         dplyr::ungroup () %>%
         dplyr::group_by(GEOID, service_rte_num) %>%
@@ -132,9 +141,10 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
         dplyr::mutate(arrival_time = stringr::str_replace(arrival_time, "^24:|25:|26:|27:|28:|29:|30:/d" , "04:00:00")) %>%
         dplyr::mutate(arrival_time = hms::as_hms(arrival_time)) %>%
         #filter(arrival_time >= begin_time & arrival_time <= end_time ) %>%
-        dplyr::left_join(netplan_calendar) %>%
+        dplyr::left_join(calendar) %>%
         dplyr::group_by(GEOID, trip_id, service_rte_num, service_id) %>%
-        dplyr::slice(which.min(arrival_time)) %>%
+        dplyr::mutate(first_seconds_after_midnight = min(seconds_after_midnight)) %>%
+        dplyr::filter(seconds_after_midnight == first_seconds_after_midnight) %>%
         dplyr::summarize(weekly_trips = sum(calendar_sum, na.rm = TRUE))%>%
         dplyr::ungroup () %>%
         dplyr::group_by(GEOID, service_rte_num) %>%
@@ -144,11 +154,11 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
   } else { #handling the difference between netplan GTFS which uses route_id for storage of route num and production GTFS which uses route_short_name
     trips_by_geo_rte <- stops_geo %>%
       dplyr::select(stop_id, GEOID) %>%
-      dplyr::left_join( gtfs$stop_times) %>%
-      dplyr::select(stop_id, GEOID, trip_id, arrival_time) %>%
+      dplyr::left_join( gtfs$stop_times, multiple = "all", relationship = "many-to-many") %>%
+      dplyr::select(stop_id, GEOID, trip_id, arrival_time, seconds_after_midnight) %>%
       dplyr::left_join(gtfs$trips) %>%
       dplyr::left_join(routes, by = "route_id")
-    if(include_st == TRUE){
+    if(include_st == FALSE){
       trips_by_geo_rte <- trips_by_geo_rte %>%
         dplyr::filter(!(service_rte_num %in% c(97, 90,400:601, 629, 632:634, 636:662 , 700:772, 776:900, 932:999))) %>% #for title VI filter out all non metro services
         #this step is fixing the times after midnight issue. I cheated
@@ -160,7 +170,8 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
         #filter(arrival_time >= begin_time & arrival_time <= end_time ) %>%
         dplyr::left_join(calendar) %>%
         dplyr::group_by(GEOID, trip_id, service_rte_num, service_id) %>%
-        dplyr::slice(which.min(arrival_time)) %>%
+        dplyr::mutate(first_seconds_after_midnight = min(seconds_after_midnight)) %>%
+        dplyr::filter(seconds_after_midnight == first_seconds_after_midnight) %>%
         dplyr::summarize(weekly_trips = sum(calendar_sum, na.rm = TRUE))%>%
         dplyr::ungroup () %>%
         dplyr::group_by(GEOID, service_rte_num) %>%
@@ -177,7 +188,8 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
         #filter(arrival_time >= begin_time & arrival_time <= end_time ) %>%
         dplyr::left_join(calendar) %>%
         dplyr::group_by(GEOID, trip_id, service_rte_num, service_id) %>%
-        dplyr::slice(which.min(arrival_time)) %>%
+        dplyr::mutate(first_seconds_after_midnight = min(seconds_after_midnight)) %>%
+        dplyr::filter(seconds_after_midnight == first_seconds_after_midnight) %>%
         dplyr::summarize(weekly_trips = sum(calendar_sum, na.rm = TRUE))%>%
         dplyr::ungroup () %>%
         dplyr::group_by(GEOID, service_rte_num) %>%
@@ -202,11 +214,10 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
   if(save_csv == TRUE){
 
     readr::write_csv(trips_by_geo_rte, na= "", file = paste0(output_folder, "/",
-      project_name,"_", lubridate::today() , "_", analysis_period, "_",
-      geography ,"_" ,gtfs_type, "_by_route_trips.csv"))
+      project_name,"_", lubridate::today() , "_title_vi_",gtfs_type, "_by_route_trips.csv"))
 
     readr::write_csv(trips_by_geo, na= "",file = paste0(output_folder, "/", project_name,"_", lubridate::today() ,
-                    "_", analysis_period, "_", geography ,"_" ,gtfs_type, "_trips.csv"))
+                                                        "_title_vi_" ,gtfs_type, "_trips.csv"))
 
     cli::cli_inform("CSV exports at {output_folder}")
   } else {
@@ -216,11 +227,10 @@ routes <- clean_service_rte_num(gtfs$routes, netplan_gtfs = netplan_gtfs)
   if(save_RDS == TRUE){
 
     saveRDS(trips_by_geo_rte,  file = paste0(output_folder, "/",
-                                                             project_name,"_", lubridate::today() , "_", analysis_period, "_",
-                                                             geography ,"_" ,gtfs_type, "_by_route_trips.RDS"))
+                                                             project_name,"_", lubridate::today() , "_title_vi_" ,gtfs_type, "_by_route_trips.RDS"))
 
     saveRDS(trips_by_geo, file = paste0(output_folder, "/", project_name,"_", lubridate::today() ,
-                                                        "_", analysis_period, "_", geography ,"_" ,gtfs_type, "_trips.RDS"))
+                                        "_title_vi_" ,gtfs_type, "_trips.RDS"))
 
     cli::cli_inform("RDS export at {output_folder}")
   }else {

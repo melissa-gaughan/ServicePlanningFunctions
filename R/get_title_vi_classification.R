@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-get_title_vi_classification <- function( acs_year, geography, state = "WA", county = "King") {
+get_title_vi_classification <- function( acs_year, geography=NULL, state = "WA", county = "King") {
 
   server <- "kcitazrsqlprp01.database.windows.net"
   database = "tbird_dw"
@@ -64,7 +64,8 @@ get_title_vi_classification <- function( acs_year, geography, state = "WA", coun
     kc_tracts_no_water <- remove_water(polygon = kc_tracts, state_code = "WA",  county_code = "King", crs = 2926) %>%
       sf::st_buffer(50)
 
-    acs <- kc_tracts_no_water
+    acs <- kc_tracts_no_water %>%
+      dplyr::rename(GEOID = GEO_ID_TRT)
 
   } else if(!(("MULTIPOLYGON" %in% class(geography))| "POLYGON" %in% class(geography))){
     cli::cli_abort(c(
@@ -74,20 +75,29 @@ get_title_vi_classification <- function( acs_year, geography, state = "WA", coun
   } else {
     acs <- geography
   }
-
+  cli::cli_inform(c(
+    "before census table" ))
 
   census_table <- tidycensus::get_acs(geography = "tract",
-                          variables = c(total_pop = "B01001_001"),
-                          state= "WA",
-                          county = "King",
+                          variables = c(total_pop = "B01001_001",
+                                        pov1="C17002_001"     ,
+                                        pov2= "C17002_008" ,
+                                        people_of_color1 ="B03002_001",
+                                        people_of_color2=   "B03002_003"),
+                          state= state,
+                          county = county,
                           year= acs_year,
-                          geometry = F,
-                          output = "wide") %>%
+                          geometry = F) %>%
     janitor::clean_names() %>%
-    dplyr::select(geoid, total_pop_e) %>%
-    dplyr::rename(total_pop = total_pop_e)
+    dplyr::select(-moe) %>%
+   tidyr::pivot_wider(names_from = variable, values_from = c(estimate)) %>%
+    dplyr::mutate(population_200_pct_below_poverty_line = pov1 - pov2,
+           people_of_color= people_of_color1 - people_of_color2)
 
-  tract_info  <-  tracts %>%
+  cli::cli_inform(c(
+    "after census table" ))
+
+  tract_info  <-  acs %>%
     janitor::clean_names() %>%
     dplyr::left_join( tract_classification, by = "geoid") %>%
     dplyr:: left_join(census_table) %>%

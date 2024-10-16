@@ -28,7 +28,7 @@
 #'                                            designated_end_date = 20250330)
 #'
 
-gtfs_calendar_full_dates <- function(calendar, calendar_dates = NULL, netplan_gtfs = FALSE, designated_start_date = NULL, designated_end_date = NULL) {
+gtfs_calendar_full_dates <- function(calendar, calendar_dates = NULL, netplan_gtfs , designated_start_date = NULL, designated_end_date = NULL) {
 
 server <- "kcitazrsqlprp01.database.windows.net"
 database = "tbird_dw"
