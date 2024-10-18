@@ -123,6 +123,8 @@ count_trips_by_geography <- function(gtfs_object, begin_time, end_time, analysis
       dplyr::summarize(weekly_trip_ct = sum(ct) / max(num_of_weeks), .groups = "keep")
 
     # Filter calendar based on day_type input value using reference list
+    # Keep function selects the days of the week values from the above reference list based on day_type user input
+    # Unlist converts the list element into a vector to be used by the filter function
     calendar <- calendar_full_dates %>%
       dplyr::filter(day_of_week %in% unlist(keep(day_type_dim, names(day_type_dim) == day_type)) ) %>%
       dplyr::group_by(service_id) %>%
@@ -174,7 +176,7 @@ count_trips_by_geography <- function(gtfs_object, begin_time, end_time, analysis
         dplyr::ungroup() %>%
         dplyr::group_by(GEOID, route_id, service_rte_num) %>%
         dplyr::summarize(trips_per_rte = sum(trip_count, na.rm = TRUE),
-                  route_capacity = sum(vehicle_capacity, na.rm=T))  %>%
+                  route_capacity = sum(vehicle_capacity * trip_count, na.rm=T))  %>%
         dplyr::mutate(output_type = "trips_by_rte_geo",
                run_id = run_id,
                GEOID = as.character(GEOID))
