@@ -108,41 +108,27 @@ count_trips_by_geography <- function(gtfs_object, begin_time, end_time, analysis
     gtfs$stop_times$seconds_after_midnight <- stop_time_sec
 
     # Calendar #####
+    # Create day_type reference list
+    day_type_dim <- list(c('monday', 'tuesday', 'wednesday', 'thursday', 'friday'), # weekday
+                         c('saturday', 'sunday'), # weekend
+                         c('saturday'), # saturday
+                         c('sunday'), # sunday
+                         c('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday')) # week
+
+    names(day_type_dim) <- c('weekday', 'weekend', 'saturday', 'sunday', 'week') # order matters
+
     calendar_full_dates <- gtfs_calendar_full_dates(calendar = gtfs$calendar, calendar_dates = gtfs$calendar_dates,
                                                     netplan_gtfs = netplan_gtfs) %>%
       dplyr::group_by(service_id, day_of_week) %>%
       dplyr::summarize(weekly_trip_ct = sum(ct) / max(num_of_weeks), .groups = "keep")
-    if( day_type == "weekday") { #filter to only weekday service
-      calendar <- calendar_full_dates %>%
-        dplyr::filter(!(day_of_week %in% c("saturday", "sunday") )) %>%
-        dplyr::group_by(service_id) %>%
-        dplyr::summarize(calendar_sum = sum(weekly_trip_ct))
-      #Reduce gtfs_trips by keeping only those with service_ids matching the reduced calendar dataset (no weekend-only trips)
 
-    } else if (day_type == "weekend") { #filter saturday and sunday
-      calendar <- calendar_full_dates %>%
-        dplyr::filter((day_of_week %in% c("saturday", "sunday") )) %>%
-        dplyr::group_by(service_id) %>%
-        dplyr::summarize(calendar_sum = sum(weekly_trip_ct))
-
-
-    } else if (day_type == "saturday") { #filter saturday only
-      calendar <- calendar_full_dates %>%
-        dplyr::filter(!(day_of_week %in% c("saturday") )) %>%
-        dplyr::group_by(service_id) %>%
-        dplyr::summarize(calendar_sum = sum(weekly_trip_ct))
-    } else if (day_type == "sunday") { #filter sunday only
-      calendar <- calendar_full_dates %>%
-        dplyr::filter(!(day_of_week %in% c( "sunday") )) %>%
-        dplyr::group_by(service_id) %>%
-        dplyr::summarize(calendar_sum = sum(weekly_trip_ct))
-    } else if (day_type == "week") { #no filter
-      calendar <- calendar_full_dates %>%
+    # Filter calendar based on day_type input value using reference list
+    # Keep function selects the days of the week values from the above reference list based on day_type user input
+    # Unlist converts the list element into a vector to be used by the filter function
+    calendar <- calendar_full_dates %>%
+      dplyr::filter(day_of_week %in% unlist(keep(day_type_dim, names(day_type_dim) == day_type)) ) %>%
       dplyr::group_by(service_id) %>%
-        dplyr::summarize(calendar_sum = sum(weekly_trip_ct))
-
-    }
-
+      dplyr::summarize(calendar_sum = sum(weekly_trip_ct))
 
       # check datum of block groups to make sure stops are projected correctly. pass to st_transform for easy matching
       #this was altered to accommodate the fact that GIRO did not do the transformation from HARN #to world mercator
@@ -190,7 +176,7 @@ count_trips_by_geography <- function(gtfs_object, begin_time, end_time, analysis
         dplyr::ungroup() %>%
         dplyr::group_by(GEOID, route_id, service_rte_num) %>%
         dplyr::summarize(trips_per_rte = sum(trip_count, na.rm = TRUE),
-                  route_capacity = sum(vehicle_capacity, na.rm=T))  %>%
+                  route_capacity = sum(vehicle_capacity * trip_count, na.rm=T))  %>%
         dplyr::mutate(output_type = "trips_by_rte_geo",
                run_id = run_id,
                GEOID = as.character(GEOID))
