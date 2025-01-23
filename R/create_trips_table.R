@@ -4,6 +4,7 @@
 #' @param network Character. GTFS. Options are 'baseline_gtfs', 'proposed_gtfs'
 #' @param by_direction T/F. Do you want a breakdown by inbound/outbound direction?
 #' @param by_period T/F. Do you want a breakdown by period?
+#' @param routes Character. Filter by Routes
 #'
 #'
 #' @return Data frame of summary metrics of GTFS input (Trip Count, Span, Headway)
@@ -15,7 +16,7 @@
 #'
 #' spring_24_trip_table <- create_trips_table(day_type = 'wkd', network = 'baseline_gtfs', by_direction = FALSE, by_period = TRUE)
 
-create_trips_table <- function(day_type, network, by_direction = TRUE, by_period = TRUE){
+create_trips_table <- function(day_type, network, by_direction = TRUE, by_period = TRUE, routes = NULL){
   if(network == "baseline_gtfs"){
     kcm <- baseline_gtfs
   } else if(network == "proposed_gtfs"){
@@ -24,8 +25,14 @@ create_trips_table <- function(day_type, network, by_direction = TRUE, by_period
     print("check network")
   }
 
+  # Update routes argument if no route selection is provided or provided routes are not found
+  if(nrow(filter(kcm$routes, route_id %in% routes)) == 0) {
+    routes <- kcm$routes$route_id
+    cli::cli_alert_info("No valid routes provided. Generating table for all routes.")
+  }
 
   kcm$routes <- kcm$routes %>%
+    filter(route_id %in% routes) %>% # filter for select routes
     mutate(route_short_name = ifelse(is.na(route_short_name), route_long_name,
                                      paste0(route_short_name,
                                             ' ',
@@ -75,6 +82,7 @@ create_trips_table <- function(day_type, network, by_direction = TRUE, by_period
   # Weekdays
   # Filter only trips in the routes in the corridors selected
   trips_wkd <- kcm$trips %>%
+    filter(route_id %in% routes) %>% # filter for select routes
     # Filter only weekday trips
     filter(service_id %in% serv_wkd$service_id) %>%
     # Keep only relevant variables
