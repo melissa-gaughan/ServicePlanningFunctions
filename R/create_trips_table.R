@@ -1,5 +1,6 @@
 #' Create summary table of trips and headways
 #'
+#' @param gtfs List of Data Frames. GTFS data. Output from read_gtfs function or combine_gtfs function.
 #' @param day_type Character. Day of Week. Options are 'wkd', 'sat', 'sun'
 #' @param network Character. GTFS. Options are 'baseline_gtfs', 'proposed_gtfs'
 #' @param by_direction T/F. Do you want a breakdown by inbound/outbound direction?
@@ -14,15 +15,15 @@
 #' baseline_gtfs <- tidytransit::read_gtfs(path =
 #' fs::path_package( "extdata", "gtfs", "241_gtfs.zip", package = "ServicePlanningFunctions"))
 #'
-#' spring_24_trip_table <- create_trips_table(day_type = 'wkd', network = 'baseline_gtfs', by_direction = FALSE, by_period = TRUE)
+#' spring_24_trip_table <- create_trips_table(gtfs = baseline_gtfs, day_type = 'wkd', network = 'baseline_gtfs', by_direction = FALSE, by_period = TRUE)
 
-create_trips_table <- function(day_type, network, by_direction = TRUE, by_period = TRUE, routes = NULL){
-  if(network == "baseline_gtfs"){
-    kcm <- baseline_gtfs
-  } else if(network == "proposed_gtfs"){
-    kcm <- proposed_gtfs
-  }else{
-    print("check network")
+create_trips_table <- function(gtfs, day_type, network, by_direction = TRUE, by_period = TRUE, routes = NULL){
+  if(missing(gtfs)) {
+    cli::cli_abort(c("X" = "No GTFS data provided."))
+  } else if(!(network %in% c("baseline_gtfs", "proposed_gtfs"))) {
+    cli::cli_abort(c("X" = "Invalid network provided. Set network to 'baseline_gtfs' or 'proposed_gtfs'."))
+  } else {
+    kcm <- map(gtfs, as_tibble) # Convert all data frames in the list to tibbles
   }
 
   # Update routes argument if no route selection is provided or provided routes are not found

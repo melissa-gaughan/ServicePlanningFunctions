@@ -15,6 +15,8 @@ create_trips_table(day_type, network, by_direction = TRUE, by_period = TRUE)
 
 \item{by_period}{T/F. Do you want a breakdown by period?}
 
+\item{gtfs}{List of Data Frames. GTFS data. Output from read_gtfs function or combine_gtfs function.}
+
 \item{routes}{Character. Filter by Routes}
 }
 \value{
@@ -27,5 +29,5 @@ Create summary table of trips and headways
 baseline_gtfs <- tidytransit::read_gtfs(path =
 fs::path_package( "extdata", "gtfs", "241_gtfs.zip", package = "ServicePlanningFunctions"))
 
-spring_24_trip_table <- create_trips_table(day_type = 'wkd', network = 'baseline_gtfs', by_direction = FALSE, by_period = TRUE)
+spring_24_trip_table <- create_trips_table(gtfs = baseline_gtfs, day_type = 'wkd', network = 'baseline_gtfs', by_direction = FALSE, by_period = TRUE)
 }
