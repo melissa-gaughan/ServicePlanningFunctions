@@ -4,9 +4,18 @@
 \alias{create_trips_table}
 \title{Create summary table of trips and headways}
 \usage{
-create_trips_table(day_type, network, by_direction = TRUE, by_period = TRUE)
+create_trips_table(
+  gtfs,
+  day_type,
+  network,
+  by_direction = TRUE,
+  by_period = TRUE,
+  routes = NULL
+)
 }
 \arguments{
+\item{gtfs}{List of Data Frames. GTFS data. Output from read_gtfs function or combine_gtfs function.}
+
 \item{day_type}{Character. Day of Week. Options are 'wkd', 'sat', 'sun'}
 
 \item{network}{Character. GTFS. Options are 'baseline_gtfs', 'proposed_gtfs'}
@@ -14,8 +23,6 @@ create_trips_table(day_type, network, by_direction = TRUE, by_period = TRUE)
 \item{by_direction}{T/F. Do you want a breakdown by inbound/outbound direction?}
 
 \item{by_period}{T/F. Do you want a breakdown by period?}
-
-\item{gtfs}{List of Data Frames. GTFS data. Output from read_gtfs function or combine_gtfs function.}
 
 \item{routes}{Character. Filter by Routes}
 }
